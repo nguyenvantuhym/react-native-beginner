@@ -32,7 +32,6 @@ export default class App extends Component {
   constructor(props)
   {
     super(props);
-
   }
  
   render() {
@@ -49,13 +48,10 @@ export default class App extends Component {
           tabBarStyle={{backgroundColor:"#FFFFFF"}}
           >
             <Scene key="osu" title="osu" icon={tabicon}>
-              
               <Scene key="gray" component={GrayScreen} title="Gray Screen" initial/>
               <Scene key="scarlet" component={ScarletScreen} title="Scarlet Screen" />
             </Scene>
-
             <Scene key="bsu" title="bsu" icon={tabicon}>
-              
               <Scene key="gray" component={GrayScreen} title="Gray Screen" />
               <Scene key="scarlet" component={ScarletScreen} title="Scarlet Screen" initial/>
             </Scene>
