@@ -34,15 +34,32 @@ export default class App extends Component {
     super(props);
 
   }
+ 
   render() {
+    const tabicon = ({selected, title})=> <Text>{title}</Text>
     let pic = {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     }
     return (
       <Router>
         <Scene key="root">
-          <Scene key="gray" component={GrayScreen} title="Gray Screen" initial/>
-          <Scene key="scarlet" component={ScarletScreen} title="Scarlet Screen" />
+          <Scene 
+          key="tabbar"
+          tabs
+          tabBarStyle={{backgroundColor:"#FFFFFF"}}
+          >
+            <Scene key="osu" title="osu" icon={tabicon}>
+              
+              <Scene key="gray" component={GrayScreen} title="Gray Screen" initial/>
+              <Scene key="scarlet" component={ScarletScreen} title="Scarlet Screen" />
+            </Scene>
+
+            <Scene key="bsu" title="bsu" icon={tabicon}>
+              
+              <Scene key="gray" component={GrayScreen} title="Gray Screen" />
+              <Scene key="scarlet" component={ScarletScreen} title="Scarlet Screen" initial/>
+            </Scene>
+          </Scene>
         </Scene>
       </Router>
     );

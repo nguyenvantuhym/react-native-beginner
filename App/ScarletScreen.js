@@ -6,9 +6,7 @@ class ScarletScreen extends Component {
         return(
         <View>
             <Text onPress={()=>Actions.gray()}>
-                GrayScreent
-                
-
+                ScarletScreent
             </Text>
         </View>
         )

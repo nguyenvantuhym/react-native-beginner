@@ -5,7 +5,8 @@ class GrayScreen extends Component{
     render(){
         return(
             <View>
-                <Text onPress={()=>Actions.scarlet()}>
+                {/* <Text onPress={()=>Actions.scarlet()}> */}
+                <Text>
                     GrayScreent
                 </Text>
             </View>
