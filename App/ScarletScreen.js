@@ -34,7 +34,7 @@ class ScarletScreen extends Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      marginTop: Constants.statusBarHeight,
+      marginTop: 20,
     },
     item: {
       backgroundColor: '#f9c2ff',
